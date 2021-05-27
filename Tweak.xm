@@ -71,6 +71,8 @@ NSString *p;
     for (NSString *filename in fileArray)  {
        [fileMgr removeItemAtPath:[directory stringByAppendingPathComponent:filename] error:NULL];
     }
+  } else {
+    %orig;
   }
 }
 %end
